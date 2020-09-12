@@ -22,5 +22,5 @@ save
 and then run
 
 ```
-npm start
+npm run start
 ```
