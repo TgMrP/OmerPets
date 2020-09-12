@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem
+}
+
+.mb-8 {
+  margin-bottom: 2rem
+}
+
+.mt-8 {
+  margin-top: 2rem
+}
+
+body {
+  background-color: #e4e9ed;
+  font-family: Raleway, sans-serif
+}
+
+br {
+  margin-bottom: 2%
+}
+
+.header {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: 1fr max-content
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none
+}
+
+.header a:hover {
+  color: #1c941c;
+  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.4)
+}
+
+.header .logo {
+  fill: white;
+  width: 6rem;
+  padding-left: 2rem;
+  cursor: pointer;
+  color: #fff
+}
+
+.header .logo svg {
+  fill: currentColor
+}
+
+.header .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/dog.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.header .title {
+  grid-area: 2 / 1 / 2 / 3;
+  color: white;
+  justify-self: center;
+  text-transform: uppercase;
+  font-size: 6vw;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  padding-top: 9.5vh
+}
+
+.header .log {
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)
+}
+
+.main {
+  width: 100%;
+  padding-top: 1.7rem;
+  margin: auto;
+  text-align: center
+}
+
+.id_input {
+  padding: 1rem;
+  width: 50%;
+  font-size: 16px
+}
+
+.error {
+  border: 1px solid red
+}
+
+.error-text {
+  color: red
+}
+
+.form-field {
+  margin-bottom: 1rem
+}
+
+.search_button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #1c941c;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer
+}

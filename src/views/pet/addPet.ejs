@@ -1,0 +1,47 @@
+<div class="">
+  <form method="POST" action="">
+    <div class="form-field">
+      <input type="text" name="petName" placeholder="pet name"
+        class="id_input<%- errors && errors.petName ? ' error' : '' %>" value="<%= value.petName %>">
+      <% if (errors.petName) { %>
+      <div class="error-text">
+        <%= errors.petName %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="form-field">
+      <input type="text" name="ownerName" placeholder="owner name"
+        class="id_input<%- errors.ownerName ? ' error' : '' %>" value="<%= value.ownerName %>">
+      <% if (errors.ownerName) { %>
+      <div class="error-text">
+        <%= errors.ownerName %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="form-field">
+      <input type="text" name="phone" placeholder="owner phone number"
+        class="id_input<%- errors.phone ? ' error' : '' %>" value="<%= value.phone %>">
+      <% if (errors.phone) { %>
+      <div class="error-text">
+        <%= errors.phone %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="form-field">
+      <input type="text" name="email" placeholder="owner email" class="id_input<%- errors.email ? ' error' : '' %>"
+        value="<%= value.email %>">
+      <% if (errors.email) { %>
+      <div class="error-text">
+        <%= errors.email %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="">
+      <button type="submit" class="search_button">Add Pet</button>
+    </div>
+  </form>
+</div>

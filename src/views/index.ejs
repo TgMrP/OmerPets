@@ -1,0 +1,24 @@
+<div class="mt-8">
+
+  <% if (context) { %>
+  <div class="error-text mb-2">
+    "<%=context %> " not found
+  </div>
+  <% } %>
+
+  <div class="mb-8">
+    <input type="text" id="id" placeholder="enter pet number" class="id_input">
+  </div>
+
+  <div class="mb-2">
+    <button onclick="Sendto()" class="search_button">Search</button>
+  </div>
+</div>
+
+<script>
+  function Sendto() {
+    const id = document.getElementById('id').value;
+    window.location.pathname = '/pet/' + id;
+    return false;
+  }
+</script>
